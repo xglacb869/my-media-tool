@@ -34,7 +34,7 @@ if st.button("🚀 开始云端提取", type="primary"):
             }
 
             if mode == "最高画质视频 (MP4)":
-                ydl_opts['format'] = 'bestvideo+bestaudio/best'
+    ydl_opts['format'] = 'bestvideo[vcodec^=avc]+bestaudio[ext=m4a]/best[ext=mp4]/best'
                 ydl_opts['merge_output_format'] = 'mp4'
             elif mode == "提取纯音频 (MP3 - 192kbps)":
                 ydl_opts['format'] = 'bestaudio/best'
